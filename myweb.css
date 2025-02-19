@@ -24,51 +24,51 @@ a:hover {
 
 /* Modified Bio Section */
 /* Modified Bio Section */
+/* Remove card styling from all sections */
+div.section {
+  padding: 25px 0;  /* Reduced vertical padding */
+  margin: 20px 0;
+  background-color: transparent; /* Remove white background */
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Bio section specific adjustments */
 div#bio {
   display: flex;
-  flex-wrap: nowrap; /* Changed from wrap */
+  flex-wrap: nowrap;
   gap: 40px;
   align-items: flex-start;
   justify-content: space-between;
   padding: 20px 0;
   margin-bottom: 30px;
-}
-
-div.biotext {
-  flex: 1;
-  min-width: 60%; /* Changed from fixed width */
-  padding: 15px;
+  border-bottom: 1px solid #eee; /* Optional separator */
 }
 
 img.bioimage {
-  width: 250px;
-  height: 250px;
+  width: 200px;  /* Reduced size */
+  height: 200px;
   object-fit: cover;
-  border: 3px solid #e0e0e0;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin: 10px;
-  flex-shrink: 0; /* Added to prevent shrinking */
+  flex-shrink: 0;
+  /* Removed border and shadow */
 }
 
-/* Responsive Bio Layout */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   div#bio {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 25px;
+    border-bottom: none;
   }
   
   img.bioimage {
     order: -1;
-    width: 200px;
-    height: 200px;
-  }
-  
-  div.biotext {
-    min-width: 100%;
-    padding: 10px;
+    width: 180px;
+    height: 180px;
   }
 }
 
