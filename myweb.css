@@ -6,35 +6,20 @@ body {
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #333333;
+  background-color: #f5f5f5;
+  padding: 20px;
 }
 
 a {
-  color: #3B7EA1;
+  color: #2c6a8a;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:focus,
 a:hover {
-  color: #C4820E;
-}
-
-a:focus,
-a:hover {
-  color: #C4820E;
-}
-
-
-
-  a {
-    color: #C4820E;
-  }
-
-  a:focus,
-  a:hover {
-    color: #3B7EA1;
-  }
+  color: #a5682a;
 }
 
 div#bio {
@@ -42,21 +27,21 @@ div#bio {
   justify-content: center;
   align-items: center;
   padding: 0px;
+  margin-bottom: 30px;
 }
 
 div.biotext {
   display: inline-block;
   vertical-align: middle;
   max-width: 60%;
-  padding: 10px;
+  padding: 20px;
 }
 
-/* Modified image style - square */
 img.bioimage {
   display: inline-block;
   vertical-align: middle;
   object-fit: cover;
-  border-radius: 0%; /* Changed from 50% */
+  border-radius: 0%;
   max-width: 35%;
   width: auto;
   height: auto;
@@ -66,25 +51,56 @@ img.bioimage {
 }
 
 div.section {
-  padding: 10px 20px 10px 20px;
+  padding: 25px 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 25px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 div.content {
-  padding: 0px;
+  padding: 10px 0;
 }
 
 h1 {
   text-align: center;
-  font-weight: normal;
-  font-size: min(5vw, 30px);
+  font-weight: 500;
+  font-size: min(5vw, 32px);
+  color: #2a2a2a;
+  margin-bottom: 25px;
 }
 
-/* h2 {
-  font-weight: normal;
-} */
-
-h3.foldable {
-  display: inline;
+h2 {
+  font-weight: 500;
+  color: #3a3a3a;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
 }
 
-span.paper
+h3 {
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 25px;
+  margin: 15px 0;
+}
+
+li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* MathJax equations styling */
+mjx-container {
+  color: #4a4a4a !important;
+}
