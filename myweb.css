@@ -23,9 +23,10 @@ a:hover {
 }
 
 /* Modified Bio Section */
+/* Modified Bio Section */
 div#bio {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Changed from wrap */
   gap: 40px;
   align-items: flex-start;
   justify-content: space-between;
@@ -35,8 +36,7 @@ div#bio {
 
 div.biotext {
   flex: 1;
-  min-width: 300px;
-  max-width: 600px;
+  min-width: 60%; /* Changed from fixed width */
   padding: 15px;
 }
 
@@ -48,6 +48,7 @@ img.bioimage {
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin: 10px;
+  flex-shrink: 0; /* Added to prevent shrinking */
 }
 
 /* Responsive Bio Layout */
@@ -66,7 +67,7 @@ img.bioimage {
   }
   
   div.biotext {
-    max-width: 100%;
+    min-width: 100%;
     padding: 10px;
   }
 }
