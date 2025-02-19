@@ -40,7 +40,6 @@ a:hover {
   a:hover {
     color: #3B7EA1;
   }
-
 }
 
 div#bio {
@@ -57,11 +56,12 @@ div.biotext {
   padding: 10px;
 }
 
+/* Modified image style - square */
 img.bioimage {
   display: inline-block;
   vertical-align: middle;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 0%; /* Changed from 50% */
   max-width: 35%;
   width: auto;
   height: auto;
@@ -92,58 +92,4 @@ h3.foldable {
   display: inline;
 }
 
-span.paper {
-  font-weight: bold;
-}
-
-span.author {
-  font-weight: normal;
-}
-
-span.me {
-  font-weight: 600;
-  /* font-style: italic; */
-  /* text-decoration: underline; */
-}
-
-span.venue {
-  font-weight: normal;
-}
-
-span.seminar {
-  font-weight: normal;
-  font-style: italic;
-}
-
-span.location {
-  font-weight: 600;
-}
-
-span.people {
-  font-weight: normal;
-  white-space: nowrap;
-}
-
-@media screen and (max-width: 600px) {
-  div#bio {
-    display: block;
-  }
-
-  div.biotext {
-    display: block;
-    max-width: 100%;
-  }
-
-
-  .bioimage {
-    width: 200px;  /* You can adjust this size */
-    height: 200px; /* Should be same as width */
-    object-fit: cover;
-    border-radius: 10px;  /* Optional: for rounded corners */
-}
-  
-  body {
-    max-width: 100%;
-    font-size: 14px;
-  }
-}
+span.paper
