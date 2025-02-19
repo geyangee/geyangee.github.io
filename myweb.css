@@ -134,12 +134,14 @@ span.people {
     max-width: 100%;
   }
 
-  img.bioimage {
-    display: block;
-    border-radius: 20%;
-    max-width: 40%;
-  }
 
+  .bioimage {
+    width: 200px;  /* You can adjust this size */
+    height: 200px; /* Should be same as width */
+    object-fit: cover;
+    border-radius: 10px;  /* Optional: for rounded corners */
+}
+  
   body {
     max-width: 100%;
     font-size: 14px;
